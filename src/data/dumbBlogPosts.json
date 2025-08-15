@@ -1,0 +1,57 @@
+[
+  {
+    "id": "1",
+    "title": "How to Plan the Perfect Summer Meetup",
+    "date": "2025-07-12",
+    "writer": {
+      "name": "Emily Carter",
+      "avatar": "https://randomuser.me/api/portraits/women/32.jpg"
+    },
+    "post": "Summer is the perfect season to bring people together. In this guide, we’ll cover location scouting, food and drink options, and fun group activities that keep the vibe alive. Whether it’s a beachside picnic or a rooftop gathering, a little preparation goes a long way toward creating unforgettable memories.",
+    "tags": ["event-planning", "summer", "meetup", "community"]
+  },
+  {
+    "id": "2",
+    "title": "10 Icebreaker Games That Actually Work",
+    "date": "2025-05-03",
+    "writer": {
+      "name": "Liam Rodriguez",
+      "avatar": "https://randomuser.me/api/portraits/men/41.jpg"
+    },
+    "post": "Breaking the ice at an event can be tricky. We’ve compiled a list of games that are easy to set up, fun to play, and get people talking within minutes. From quick-fire Q&A rounds to creative storytelling circles, these ideas help guests feel connected right away.",
+    "tags": ["games", "networking", "icebreakers", "fun"]
+  },
+  {
+    "id": "3",
+    "title": "The Rise of Hybrid Events in 2025",
+    "date": "2025-03-22",
+    "writer": {
+      "name": "Sophia Lee",
+      "avatar": "https://randomuser.me/api/portraits/women/67.jpg"
+    },
+    "post": "With the blending of in-person and online experiences, hybrid events are becoming the new standard. We’ll explore the tools, strategies, and best practices to engage both physical and virtual audiences at the same time, without compromising quality or interaction.",
+    "tags": ["hybrid-events", "technology", "virtual", "trends"]
+  },
+  {
+    "id": "5",
+    "title": "How to Attract More Attendees to Your Event",
+    "date": "2025-06-15",
+    "writer": {
+      "name": "David Nguyen",
+      "avatar": "https://randomuser.me/api/portraits/men/58.jpg"
+    },
+    "post": "Struggling with low attendance? Learn how to craft compelling event descriptions, leverage social media advertising, and use early-bird ticketing to boost sign-ups. Consistent communication and strong branding can make all the difference in building excitement before the big day.",
+    "tags": ["marketing", "attendance", "promotion", "growth"]
+  },
+  {
+    "id": "6",
+    "title": "Creating Accessible Events for Everyone",
+    "date": "2025-04-10",
+    "writer": {
+      "name": "Hannah Brooks",
+      "avatar": "https://randomuser.me/api/portraits/women/24.jpg"
+    },
+    "post": "Accessibility is more than just a checkbox—it’s about making everyone feel welcome. This post covers essential considerations such as wheelchair access, sign language interpreters, clear signage, and sensory-friendly spaces to ensure inclusivity for all attendees.",
+    "tags": ["accessibility", "inclusion", "diversity", "event-planning"]
+  }
+]
