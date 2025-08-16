@@ -11,7 +11,19 @@ import { Avatar } from '@radix-ui/react-avatar';
 import Link from 'next/link';
 import dumbBlogPosts from '@/data/dumbBlogPosts.json';
 
-const Blog = () => {
+const Blog = async ({
+  searchParams,
+}: {
+  searchParams: { [key: string]: string | string[] | undefined };
+}) => {
+  const { tag, authorId } = await searchParams;
+  let posts = dumbBlogPosts;
+  // If a tag is provided in the search parameters, filter the posts by that tag
+  if (authorId)
+    posts = dumbBlogPosts.filter((post) => post.id == (authorId as string));
+  if (tag)
+    posts = dumbBlogPosts.filter((post) => post.tags.includes(tag as string));
+
   return (
     <section className=''>
       <div className='container mx-auto py-10'>
@@ -19,7 +31,7 @@ const Blog = () => {
           Latest Blog Posts
         </h1>
         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6'>
-          {dumbBlogPosts.map(
+          {posts.map(
             (
               post: {
                 id: string;
@@ -42,7 +54,11 @@ const Blog = () => {
                       />
                     </Avatar>
                     <Link
-                      href={`/blog/author?authorId=${post.writer.name}`}
+                      href={
+                        tag
+                          ? `/blog?authorId=${post.id}&tag=${tag}`
+                          : `/blog?authorId=${post.id}`
+                      }
                       className='font-medium'
                     >
                       {post.writer.name}
@@ -52,14 +68,18 @@ const Blog = () => {
                 </CardHeader>
                 <CardContent>
                   <CardDescription className='text-popover-foreground mb-4'>
-                    {post.post.slice(0, 150)}
+                    {post.post.slice(0, 150).concat('...')}
                   </CardDescription>
                 </CardContent>
                 <CardFooter>
                   <div className='flex flex-wrap gap-2'>
                     {post.tags.map((tag, tagIndex) => (
                       <Link
-                        href={`/blog/tags/${tag}`}
+                        href={
+                          authorId
+                            ? `/blog?tag=${tag}&authorId=${authorId}`
+                            : `/blog?tag=${tag}`
+                        }
                         key={tagIndex}
                         className='bg-primary text-primary-foreground px-3 py-1 rounded-full text-sm font-mono'
                       >

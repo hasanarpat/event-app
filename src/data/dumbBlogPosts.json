@@ -8,6 +8,17 @@
       "avatar": "https://randomuser.me/api/portraits/women/32.jpg"
     },
     "post": "Summer is the perfect season to bring people together. In this guide, we’ll cover location scouting, food and drink options, and fun group activities that keep the vibe alive. Whether it’s a beachside picnic or a rooftop gathering, a little preparation goes a long way toward creating unforgettable memories.",
+    "tags": ["event-planning", "summer", "meetup"]
+  },
+  {
+    "id": "1",
+    "title": "How to Plan the Perfect Summer Meetup",
+    "date": "2025-07-12",
+    "writer": {
+      "name": "Emily Carter",
+      "avatar": "https://randomuser.me/api/portraits/women/32.jpg"
+    },
+    "post": "Summer is the perfect season to bring people together. In this guide, we’ll cover location scouting, food and drink options, and fun group activities that keep the vibe alive. Whether it’s a beachside picnic or a rooftop gathering, a little preparation goes a long way toward creating unforgettable memories.",
     "tags": ["event-planning", "summer", "meetup", "community"]
   },
   {
@@ -19,7 +30,7 @@
       "avatar": "https://randomuser.me/api/portraits/men/41.jpg"
     },
     "post": "Breaking the ice at an event can be tricky. We’ve compiled a list of games that are easy to set up, fun to play, and get people talking within minutes. From quick-fire Q&A rounds to creative storytelling circles, these ideas help guests feel connected right away.",
-    "tags": ["games", "networking", "icebreakers", "fun"]
+    "tags": ["games", "networking", "icebreakers", "fun", "summer"]
   },
   {
     "id": "3",
